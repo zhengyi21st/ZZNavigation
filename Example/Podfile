@@ -1,0 +1,15 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'ZZNavigationExample' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for ZZNavigationExample
+  pod 'ZZNavigation', :path => '../'
+  pod 'ZZComponents/Color' , :path => '../../ZZComponents'
+  pod 'ZZComponents/Font' , :path => '../../ZZComponents'
+  pod 'ZZComponents/Separator' , :path => '../../ZZComponents'
+  pod 'SnapKit', '~> 5.6.0'
+  
+end

@@ -1,0 +1,40 @@
+PODS:
+  - SnapKit (5.6.0)
+  - ZZComponents/Color (1.0.0):
+    - ZZComponents/Core
+  - ZZComponents/Core (1.0.0)
+  - ZZComponents/Font (1.0.0):
+    - ZZComponents/Core
+  - ZZComponents/Separator (1.0.0):
+    - ZZComponents/Color
+    - ZZComponents/Core
+  - ZZNavigation (1.0.0):
+    - ZZComponents/Color
+    - ZZComponents/Font
+    - ZZComponents/Separator
+
+DEPENDENCIES:
+  - SnapKit (~> 5.6.0)
+  - ZZComponents/Color (from `../../ZZComponents`)
+  - ZZComponents/Font (from `../../ZZComponents`)
+  - ZZComponents/Separator (from `../../ZZComponents`)
+  - ZZNavigation (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
+
+EXTERNAL SOURCES:
+  ZZComponents:
+    :path: "../../ZZComponents"
+  ZZNavigation:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  ZZComponents: f274c061fa925782edbf9425a9c4f6783e482ea8
+  ZZNavigation: 6b78909c79b570e838a63f695a1e7c96febb0de9
+
+PODFILE CHECKSUM: 0fac3bb465702c8fb19918ece6d97af4316e5c0f
+
+COCOAPODS: 1.11.3
