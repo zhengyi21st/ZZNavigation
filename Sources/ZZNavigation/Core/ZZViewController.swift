@@ -55,6 +55,7 @@ open class ZZViewController: UIViewController {
         super.viewDidLayoutSubviews()
         view.bringSubviewToFront(navigationBar)
         navigationBar.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: navigationBarContentHeight + view.safeAreaInsets.top)
+        navigationBar.layoutSubviews()
     }
 
     open override func viewDidLoad() {

@@ -90,7 +90,11 @@ open class ZZNavigationBar: UIView {
                 rightMinX = min(rightMinX, $0.frame.minX)
             }
         }
-        titleLabel.frame = CGRect(x: leftMaxX, y: 0, width: rightMinX - leftMaxX, height: contentView.bounds.height)
+        titleLabel.sizeToFit()
+        titleLabel.center.x = contentView.center.x
+        titleLabel.frame.size.height = contentView.bounds.height
+        titleLabel.frame.origin.x = max(leftMaxX, titleLabel.frame.origin.x)
+        titleLabel.frame.size.width = min(rightMinX - leftMaxX, titleLabel.frame.size.width)
     }
 
 }
